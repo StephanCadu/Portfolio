@@ -1,16 +1,20 @@
 import React from 'react';
-import Nav from './components/Nav';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import About from './components/About';
+import Contact from './components/Contact';
+import Home from './components/Home';
+import Projects from './components/Projects';
 
 function App() {
   return (
-    <div className="flex h-screen w-full items-center justify-around bg-black">
-      <Nav />
-      <main className="flex min-h-max w-4/5 min-w-min h-full text-white border-white border-2">
-        <h1 className="text-5xl font-bold underline">
-          Wellcome
-        </h1>
-      </main>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={ <Home /> } />
+        <Route path="/projects" element={ <Projects /> } />
+        <Route path="/about" element={ <About /> } />
+        <Route path="/contact" element={ <Contact /> } />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
