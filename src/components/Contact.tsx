@@ -1,11 +1,12 @@
 import React, { FunctionComponent } from "react";
+import Nav from "./Nav";
 
 interface ContactProps {}
  
 const Contact: FunctionComponent<ContactProps> = () => {
   return (
-    <div>
-      Contact
+    <div className="outContainer">
+      <Nav />
     </div>
   );
 }
