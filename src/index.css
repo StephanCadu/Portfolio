@@ -35,3 +35,7 @@ code {
 .outContainer {
   @apply flex h-screen w-full items-center justify-between bg-black
 }
+
+.mainContainer {
+  @apply flex min-h-max w-10/12 min-w-min h-full text-white items-center justify-center flex-col
+}

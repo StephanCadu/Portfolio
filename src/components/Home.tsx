@@ -10,13 +10,13 @@ const Home: FunctionComponent<HomeProps> = () => {
     <div className="outContainer">
       <Nav />
       
-      <main className="rounded-xl flex min-h-max w-10/12 min-w-min h-full text-white items-center justify-center flex-col">
+      <main className="mainContainer">
         <h1 className=" text-7xl text-center m-2">
           Hi, I'm <span className="text-green-300">Eduardo Stephan</span>,
         </h1>
         
         <h1 className="text-7xl text-center m-2 flex w-full items-center justify-center">
-          <span className=" mr-5">I'm a</span>
+          <span className="mr-5">I'm a</span>
           <span>
             <TypeWriterEffect
             startDelay={300}
