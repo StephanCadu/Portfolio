@@ -99,7 +99,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
         </div>
 
         {/* projects */}
-        <div className=" h-2/3 w-5/6">
+        {/* <div className=" h-2/3 w-5/6">
           {
             projects.map(({ name, image, description, techs, link }) => (
               <div className="flex w-full h-full items-center justify-around flex-col">
@@ -117,7 +117,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
               </div>
             ))
           }
-        </div>
+        </div> */}
       </main>
     </div>
   );

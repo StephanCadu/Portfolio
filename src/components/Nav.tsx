@@ -9,9 +9,12 @@ const Nav: FunctionComponent<NavProps> = () => {
 
   const isThisLocation = (local: string): boolean => location.pathname.includes(local);
 
+  // const isTablet: boolean = window.innerWidth <= 650;
+
   return (
-    <nav className="text-white flex flex-col h-full w-32 border-r-green-300 border-r-2 min-w-fit items-center justify-around left-0 shadow-lg shadow-green-300">
-      <Link to="/" className="h-28 w-28">
+    <nav className="navigation">
+      
+      <Link to="/" className="logoLink">
         <div className="logo"></div>
       </Link>
 
