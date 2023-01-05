@@ -37,7 +37,7 @@ code {
 }
 
 .mainContainer {
-  @apply flex min-h-max w-full min-w-min h-full text-white items-center justify-center flex-col
+  @apply flex h-full w-11/12 min-w-min text-white items-center justify-center flex-col
 }
 
 .skillsContainer {
@@ -61,6 +61,7 @@ code {
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  justify-content: flex-start;
 }
 
 .arrow-left, .arrow-right {

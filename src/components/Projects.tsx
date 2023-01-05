@@ -75,7 +75,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
         <div className="flex h-16 items-center justify-center skillsContainer">
           <button className="arrow-left text-white" onClick={() => scroll(-95)}>{ '<' }</button>
 
-          <div className="flex h-14 items-center justify-center skills" ref={ref}>
+          <div className="flex h-14 items-center skills" ref={ref}>
             { 
               techs.map(({ image, name }, index) => (
                 <img 
@@ -87,9 +87,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
                     `h-11 w-11 mx-6 my-3 p-1 hover:cursor-pointer 
                     ${skills.includes(name) ? 'border-b-2 border-b-green-200' : ''}
                     `
-                    // ${index === active ? 'activeSkill' : ''}
                   }
-                  // ref={index === active ? ref : null}
                   src={ image } 
                   alt={ name } 
                 />
