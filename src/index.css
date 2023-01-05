@@ -49,17 +49,34 @@ code {
   @apply h-28 w-28
 }
 
+.links {
+  @apply flex flex-col justify-between items-center h-36 font-medium
+}
+
+.contactLinks {
+  @apply flex w-full items-center justify-center
+}
+
 @media only screen and (max-width: 650px) {
   .outContainer {
     @apply flex h-1/6 w-full items-center justify-between flex-col bg-black;
   }
 
   .navigation {
-    @apply flex h-24 w-full flex-row justify-around items-center
+    @apply flex h-11 w-full flex-row justify-around items-center border-none shadow-none;
+    border-bottom: 1px solid #76D398;
   }
 
   .logoLink {
     display: none;
+  }
+
+  .links {
+    @apply flex flex-row justify-around items-center w-3/4 font-medium
+  }
+
+  .contactLinks {
+    @apply flex w-1/4 items-center justify-around
   }
 }
 

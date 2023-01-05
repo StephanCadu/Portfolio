@@ -18,14 +18,14 @@ const Nav: FunctionComponent<NavProps> = () => {
         <div className="logo"></div>
       </Link>
 
-      <section className="flex flex-col justify-between items-center h-36 font-medium">
+      <section className="links">
         <Link to="/projects" className={`navLink ${isThisLocation('projects') ? 'text-green-400' : ''}`}>Projects</Link>
         <Link to="/about" className={`navLink ${isThisLocation('about') ? 'text-green-400' : ''}`}>About</Link>
         <Link to="/contact" className={`navLink ${isThisLocation('contact') ? 'text-green-400' : ''}`}>Contact</Link>
         <Link to="/" className={`navLink ${location.pathname === '/' ? 'text-green-400' : ''}`}>Home</Link>
       </section>
 
-      <section className="flex w-full items-center justify-center">
+      <section className="contactLinks">
         <a href="https://www.linkedin.com/in/carlos-eduardo-stephan-851b91233/" target="_blank" rel="noreferrer">
           <GitHub className="m-2 hover:text-green-400 hover:scale-110" />
         </a>
