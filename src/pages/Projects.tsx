@@ -8,19 +8,15 @@ interface ProjectsProps {}
 const Projects: FunctionComponent<ProjectsProps> = () => {
   return (
     <div className="outContainer">
-      
       <Nav />
       
       <main className="mainContainer">
-    
         <h2 className="projectsTitle">Projects</h2>
 
         <Skills />
 
         <ShowList />
-    
       </main>
-    
     </div>
   );
 }

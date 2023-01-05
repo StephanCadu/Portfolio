@@ -29,11 +29,11 @@ code {
 }
 
 .navLink {
-  @apply hover:text-green-400 border-b-2 border-b-black hover:scale-105;
+  @apply hover:text-green-400 hover:scale-110 transition-all;
 }
 
 .outContainer {
-  @apply flex h-screen w-full items-center justify-between bg-black;
+  @apply flex h-screen w-full items-center justify-between bg-gray-800;
 }
 
 .mainContainer {
@@ -42,7 +42,10 @@ code {
 }
 
 .navigation {
-  @apply text-white flex flex-col h-full w-32 border-r-green-300 border-r-2 min-w-fit items-center justify-around left-0 shadow-lg shadow-green-300 
+  @apply text-white flex flex-col h-full w-32
+  min-w-fit items-center justify-around left-0 bg-gray-800;
+  /* shadow-lg shadow-green-300 */
+  border-right: 1px solid #76D398;
 }
 
 .logoLink {
@@ -50,7 +53,7 @@ code {
 }
 
 .links {
-  @apply flex flex-col justify-between items-center h-36 font-medium
+  @apply flex flex-col justify-between items-center h-1/3 font-medium text-xl
 }
 
 .contactLinks {
@@ -63,11 +66,11 @@ code {
 
 @media only screen and (max-width: 650px) {
   .outContainer {
-    @apply flex h-screen w-full items-center justify-between flex-col bg-black;
+    @apply flex h-screen w-full items-center justify-between flex-col bg-gray-800;
   }
 
   .navigation {
-    @apply flex h-11 w-full flex-row justify-around items-center border-none shadow-none;
+    @apply flex h-11 w-full flex-row justify-around items-center border-none shadow-none bg-gray-800;
     border-bottom: 1px solid #76D398;
   }
 
