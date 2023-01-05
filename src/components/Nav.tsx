@@ -9,8 +9,6 @@ const Nav: FunctionComponent<NavProps> = () => {
 
   const isThisLocation = (local: string): boolean => location.pathname.includes(local);
 
-  // const isTablet: boolean = window.innerWidth <= 650;
-
   return (
     <nav className="navigation">
       
