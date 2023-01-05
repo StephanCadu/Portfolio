@@ -57,9 +57,13 @@ code {
   @apply flex w-full items-center justify-center
 }
 
+.projectsTitle {
+  @apply mb-3 text-green-200 text-4xl
+}
+
 @media only screen and (max-width: 650px) {
   .outContainer {
-    @apply flex h-1/6 w-full items-center justify-between flex-col bg-black;
+    @apply flex h-screen w-full items-center justify-between flex-col bg-black;
   }
 
   .navigation {
@@ -72,11 +76,20 @@ code {
   }
 
   .links {
-    @apply flex flex-row justify-around items-center w-3/4 font-medium
+    @apply flex flex-row h-fit justify-around items-center w-3/4 font-medium
   }
 
   .contactLinks {
     @apply flex w-1/4 items-center justify-around
+  }
+
+  .projectsTitle {
+    display: none;
+  }
+
+  .mainContainer {
+    @apply flex h-full w-full text-white items-center justify-center flex-col;
+    min-width: 320px;
   }
 }
 

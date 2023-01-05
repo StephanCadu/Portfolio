@@ -69,7 +69,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
       
       <main className="mainContainer">
         {/* title */}
-        <h2 className="mb-3 font-bold text-green-200 text-4xl">Projects</h2>
+        <h2 className="projectsTitle">Projects</h2>
 
         {/* techs carousel */}
         <div className="flex h-16 items-center justify-center skillsContainer">
