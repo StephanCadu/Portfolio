@@ -10,7 +10,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
     <div className="outContainer">
       <Nav />
       
-      <main className="mainContainer">
+      <main className="projMain">
         <h2 className="projectsTitle">Projects</h2>
 
         <Skills />

@@ -17,9 +17,9 @@ const Nav: FunctionComponent<NavProps> = () => {
       </Link>
 
       <section className="links">
-        <Link to="/projects" className={`navLink ${isThisLocation('projects') ? 'text-green-400' : ''}`}>Projects</Link>
-        <Link to="/about" className={`navLink ${isThisLocation('about') ? 'text-green-400' : ''}`}>About</Link>
-        <Link to="/contact" className={`navLink ${isThisLocation('contact') ? 'text-green-400' : ''}`}>Contact</Link>
+        <Link to="/projects" className={`navLink ${isThisLocation('projects') ? 'text-green-400 scale-110' : ''}`}>Projects</Link>
+        <Link to="/about" className={`navLink ${isThisLocation('about') ? 'text-green-400 scale-110' : ''}`}>About</Link>
+        <Link to="/contact" className={`navLink ${isThisLocation('contact') ? 'text-green-400 scale-110' : ''}`}>Contact</Link>
         <Link to="/" className={`navLink ${location.pathname === '/' ? 'text-green-400' : ''}`}>Home</Link>
       </section>
 

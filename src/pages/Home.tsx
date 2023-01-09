@@ -11,11 +11,11 @@ const Home: FunctionComponent<HomeProps> = () => {
       <Nav />
       
       <main className="mainContainer">
-        <h1 className=" text-7xl text-center m-2">
+        <h1 className="homeText1">
           Hi, I'm <span className="text-green-300">Eduardo Stephan</span>,
         </h1>
         
-        <h1 className="text-7xl text-center m-2 flex w-full items-center justify-center">
+        <h1 className="homeText2">
           <span className="mr-5">I'm a</span>
           <span>
             <TypeWriterEffect
@@ -28,7 +28,7 @@ const Home: FunctionComponent<HomeProps> = () => {
         </h1>
         
         <Link to="/projects">
-          <button className="rounded-md border-2 border-green-400 bg-black p-3 text-green-400 hover:bg-green-300 hover:text-black transition-colors mt-20">SEE MY WORK</button>
+          <button className="rounded-md border-2 border-green-400 bg-gray-800 p-3 text-green-400 hover:bg-green-300 hover:text-gray-800 transition-colors mt-20">SEE MY WORK</button>
         </Link>
       </main>
     </div>

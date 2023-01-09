@@ -12,21 +12,23 @@ const ShowList: FunctionComponent<ShowListProps> = () => {
     || skills.some((skill) => project.techs.some((tech) => tech === skill)));
 
   return (
-    <div className=" h-2/3 w-5/6">
+    <div className="projOutContainer">
       {
         projects.map(({ name, image, description, techs, link }) => (
-          <div className="flex w-full h-full items-center justify-around flex-col" key={ name }>
-            <h1 className="text-center font-bold text-2xl text-green-200 my-3">{ name }</h1>
-            
-            <a href={ link } target="_blank" rel="noreferrer" className="h-fit w-3/5 max-w-xs rounded-md mx-3">
-              <img src={ image } alt={ name } />
+          <div className="projContainer" key={ name }>            
+            <a href={ link } target="_blank" rel="noreferrer" className="projImgLink">
+              <img src={ image } alt={ name } className="projImg" />
             </a>
 
-            <p className="text-center p-1 w-5/6">{ description }</p>
-            
-            <div className="flex w-11/12 h-3/5 items-center justify-center overflow-x-auto">
-              { techs.map((tech) => <p className="mx-4 text-green-200">{ tech }</p>) }
-            </div>
+            <section className="projInfo">
+              <h1 className="projTitle">{ name }</h1>
+
+              <p className="projDescription">{ description }</p>
+              
+              <div className="projTechs">
+                { techs.map((tech) => <p className="projTech">{ tech }</p>) }
+              </div>
+            </section>
           </div>
         ))
       }
