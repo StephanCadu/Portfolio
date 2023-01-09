@@ -69,7 +69,7 @@ code {
 }
 
 .homeText2 {
-  @apply text-6xl text-center m-2 flex items-center justify-center max-w-xl flex-wrap;
+  @apply text-6xl text-center m-2 flex items-center justify-center max-w-2xl flex-wrap;
 }
 
 .writtenText {
@@ -84,22 +84,29 @@ code {
 }
 
 .projOutContainer {
-  @apply h-5/6 w-full flex items-center justify-start relative pl-14;
+  @apply h-5/6 w-full flex items-center justify-start relative pl-8;
   overflow-y: hidden;
   overflow-x: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  max-width: 85%;
 }
 
 .projOutContainer::-webkit-scrollbar {
   display: none;
 }
 
-.projController {
-  @apply fixed w-auto flex items-center justify-between gap-3;
-  top: 1%;
-  left: 55%;
+.prevProject {
+  @apply fixed;
+  top: 50%;
+  left: 150px;
+}
+
+.nextProject {
+  @apply fixed;
+  top: 50%;
+  right: 2%
 }
 
 .projContainer {
@@ -108,18 +115,23 @@ code {
 
 .projInfo {
   @apply h-3/5 w-2/5 max-w-md flex flex-col items-center justify-around absolute
-  bg-gray-800 bg-opacity-80 rounded-3xl;
+  bg-gray-800 bg-opacity-80 rounded-3xl pt-2;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
   border: 1px solid #49DB7F;
-  bottom: -70px;
+  bottom: -60px;
   right: 7%;
 }
 
-.projTitle {
-  @apply text-center text-3xl text-green-400 my-3;
+.projInfo::-webkit-scrollbar {
+  display: none;
 }
 
 .projImgLink {
-  @apply rounded-3xl max-w-fit mx-10;
+  @apply rounded-3xl max-w-fit;
+  margin-right: 7%;
   border: 1px solid #49DB7F;
 }
 
@@ -127,12 +139,16 @@ code {
   @apply h-auto w-full max-w-2xl rounded-3xl opacity-70 hover:opacity-100 transition-opacity duration-300;
 }
 
+.projTitle {
+  @apply text-center text-2xl text-green-400 my-3 max-h-max;
+}
+
 .projDescription {
-  @apply text-center p-1 w-5/6;
+  @apply text-center p-1 w-5/6 max-h-fit;
 }
 
 .projTechs {
-  @apply flex w-2/3 max-w-lg h-1/3 items-center justify-start;
+  @apply flex w-2/3 max-w-lg min-h-fit h-1/3 items-center justify-start;
   overflow-x: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -218,17 +234,19 @@ code {
   }
 
   .projOutContainer {
-    @apply flex items-center justify-center h-2/3 w-11/12 mt-4;
+    @apply flex items-center justify-start h-2/3 w-11/12 mt-4;
     position: relative;
   }
 
   .projContainer {
-    @apply flex w-full h-4/5 items-center justify-center flex-col-reverse;
+    @apply flex w-full h-4/5 items-center justify-center flex-col-reverse mx-3;
   }
   
   .projInfo {
-    @apply h-3/5 w-full max-w-2xl max-h-40 flex flex-col items-center justify-around 
+    @apply h-3/5 w-full max-h-40 flex flex-col items-center justify-around 
     bg-gray-800 bg-opacity-80 rounded-b-none mx-0;
+    min-height: 150px;
+    max-width: 420px;
     border: 2px solid #49DB7F;
     position: inherit;
     bottom: auto;
@@ -243,7 +261,16 @@ code {
   }
   
   .projImg {
-    @apply h-auto w-full rounded-t-none;
+    @apply w-full rounded-t-none;
+    max-width: 440px;
+    min-width: 350px;
+    height: 15rem;
+  }
+
+  .prevProject {
+    @apply fixed;
+    top: 50%;
+    left: 1.5%;
   }
 
   .skillsContainer {

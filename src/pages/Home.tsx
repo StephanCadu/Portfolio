@@ -12,7 +12,7 @@ const Home: FunctionComponent<HomeProps> = () => {
       
       <main className="mainContainer">
 
-        <div className="flex items-center justify-center flex-col">
+        <div className="flex items-center justify-center flex-col min-h-max">
           <h1 className="homeText1">
             Hi, I'm <span className="text-green-300">Cadu Stephan</span>,
           </h1>
@@ -31,7 +31,7 @@ const Home: FunctionComponent<HomeProps> = () => {
         </div>
         
         <Link to="/projects">
-          <button className="rounded-md border-2 border-green-400 bg-gray-800 p-3 text-green-400 hover:bg-green-300 hover:text-gray-800 transition-colors mt-20">SEE MY WORK</button>
+          <button className="rounded-md border-2 border-green-400 bg-gray-800 p-3 text-green-400 hover:bg-green-300 hover:text-gray-800 transition-colors mt-10">SEE MY WORK</button>
         </Link>
       </main>
     </div>

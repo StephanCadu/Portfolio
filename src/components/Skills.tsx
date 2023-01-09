@@ -16,7 +16,7 @@ const Skills: FunctionComponent<SkillsProps> = () => {
 
   return (
     <div className="flex w-5/6 h-16 items-center justify-center ml-10 mr-10">
-      <h1 className="text-center w-36 text-2xl font-semibold pr-8">select skills: </h1>
+      <h1 className="text-center w-36 text-2xl font-semibold pr-8">filter by: </h1>
       <div className="flex h-16 items-center justify-center skillsContainer">
         <button className="arrow-left text-white" onClick={() => scroll(-75)}>{ '<' }</button>
 

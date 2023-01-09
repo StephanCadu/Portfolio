@@ -26,11 +26,11 @@ export const myProjects: IProject[] = [
     techs: ['React', 'Redux', 'JS', 'HTML', 'CSS'],
     link: 'https://my-frontend-online-store.vercel.app/'
   },
-  // {
-  //   name: 'New Bank', 
-  //   image: newbank, 
-  //   description: 'Bank app in wich you can create an account, login and transfer money to other accounts. This was my first Full-stack app.',
-  //   techs: [ 'TS', 'Node.js', 'PostgreSQL', 'Docker', 'React', 'HTML', 'CSS'],
-  //   link: '',
-  // }
+  {
+    name: 'New Bank', 
+    image: newbank, 
+    description: 'Bank app in wich you can create an account, login and transfer money to other accounts.',
+    techs: [ 'TS', 'Node.js', 'PostgreSQL', 'Docker', 'React', 'HTML', 'CSS'],
+    link: '',
+  }
 ];

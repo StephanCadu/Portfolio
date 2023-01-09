@@ -21,10 +21,10 @@ const ShowList: FunctionComponent<ShowListProps> = () => {
   return (
     // <div className="projWrapper">
       <div className="projOutContainer" ref={ ref }>
-        <div className="projController">
-          <button className=" font-bold text-4xl" onClick={() => scroll(-600)}>{ '<' }</button>
-          <button className=" font-bold text-4xl" onClick={() => scroll(600)}>{ '>' }</button>
-        </div>
+        {/* <div className="projController"> */}
+          <button className="font-bold text-4xl prevProject" onClick={() => scroll(-800)}>{ '<' }</button>
+          <button className="font-bold text-4xl nextProject" onClick={() => scroll(800)}>{ '>' }</button>
+        {/* </div> */}
         {
           projects.map(({ name, image, description, techs, link }) => (
             <div className="projContainer" key={ name }>            
