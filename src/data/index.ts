@@ -1,4 +1,5 @@
 import onlinestore from '../images/onlinestore.png';
+import newbank from '../images/newbank.png';
 import { ITech, IProject } from '../interfaces';
 
 export const techs: Array<ITech> = [
@@ -22,13 +23,14 @@ export const myProjects: IProject[] = [
     name: 'Frontend Online Store', 
     image: onlinestore, 
     description: 'E-commerce app consuming Mercado Livre\'s API. Developed in group.',
-    techs: ['HTML', 'CSS', 'JS', 'React', 'Redux'],
+    techs: ['React', 'Redux', 'JS', 'HTML', 'CSS'],
     link: 'https://my-frontend-online-store.vercel.app/'
   },
   // {
   //   name: 'New Bank', 
-  //   image: '', 
+  //   image: newbank, 
   //   description: 'Bank app in wich you can create an account, login and transfer money to other accounts. This was my first Full-stack app.',
-  //   techs: ['HTML', 'CSS', 'TS', 'React', 'Node.js', 'Docker', 'PostgreSQL']
+  //   techs: [ 'TS', 'Node.js', 'PostgreSQL', 'Docker', 'React', 'HTML', 'CSS'],
+  //   link: '',
   // }
 ];

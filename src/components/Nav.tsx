@@ -25,10 +25,10 @@ const Nav: FunctionComponent<NavProps> = () => {
       </section>
 
       <section className="contactLinks">
-        <a href="https://www.linkedin.com/in/carlos-eduardo-stephan-851b91233/" target="_blank" rel="noreferrer">
+        <a href="https://github.com/StephanCadu" target="_blank" rel="noreferrer">
           <GitHub className="m-2 hover:text-green-400 hover:scale-110" />
         </a>
-        <a href="https://github.com/StephanCadu" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/carlos-eduardo-stephan-851b91233/" target="_blank" rel="noreferrer">
           <LinkedIn className="m-2 hover:text-green-400 hover:scale-110" />
         </a>
       </section>
