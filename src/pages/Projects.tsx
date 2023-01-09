@@ -11,11 +11,9 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
       <Nav />
       
       <main className="projMain">
-        <h2 className="projectsTitle">Projects</h2>
+        <ShowList />
 
         <Skills />
-
-        <ShowList />
       </main>
     </div>
   );

@@ -13,7 +13,8 @@ const Nav: FunctionComponent<NavProps> = () => {
     <nav className="navigation">
       
       <Link to="/" className="logoLink">
-        <div className="logo"></div>
+        <h1 className="text-3xl text-center font-bold text-green-400">Cadu Stephan</h1>
+        <h1 className="text-md text-center">web developer</h1>
       </Link>
 
       <section className="links">

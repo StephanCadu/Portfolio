@@ -12,7 +12,7 @@ const Home: FunctionComponent<HomeProps> = () => {
       
       <main className="mainContainer">
         <h1 className="homeText1">
-          Hi, I'm <span className="text-green-300">Eduardo Stephan</span>,
+          Hi, I'm <span className="text-green-300">Cadu Stephan</span>,
         </h1>
         
         <h1 className="homeText2">

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap');
 
 body {
   margin: 0;
@@ -9,7 +10,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
   /* font-family: 'Roboto Mono', monospace; */
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -30,14 +31,14 @@ code {
 
 /* NAV - start */
 .navigation {
-  @apply text-white flex flex-col h-full w-32
+  @apply text-white flex flex-col h-full w-36
   min-w-fit items-center justify-around left-0 bg-gray-800;
   /* shadow-lg shadow-green-300 */
   border-right: 1px solid #76D398;
 }
 
 .logo {
-  background-image: url('./images/E.gif');
+  background-image: url('./images/Cadu.png');
   position: fixed;
   height: 100px;
   width: 100px;
@@ -68,7 +69,7 @@ code {
 }
 
 .homeText2 {
-  @apply text-7xl text-center m-2 flex w-full items-center justify-center
+  @apply text-6xl text-center m-2 flex w-full items-center justify-center
 }
 /* HOME - end */
 
@@ -79,11 +80,7 @@ code {
 }
 
 .projOutContainer {
-  @apply h-full w-full
-}
-
-.projectsTitle {
-  @apply text-green-400 text-4xl
+  @apply h-4/5 w-full flex items-center justify-center
 }
 
 .projContainer {
@@ -198,11 +195,7 @@ code {
 
   /* PROJECTS */
   .projMain {
-    @apply justify-center;
-  }
-
-  .projectsTitle {
-    display: none;
+    @apply justify-around;
   }
 
   .projOutContainer {
